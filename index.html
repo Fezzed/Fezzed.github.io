@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrossTrading - 跨境电商平台</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh; /* 改为min-height */
+            /* 移除overflow: hidden */
+        }
+        
+        .particle {
+            position: fixed; /* 改为fixed */
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9999;
+            background-color: #888;
+            opacity: 0.7;
+        }
+        
+        /* 添加一些内容使页面可滚动 */
+        .content {
+            height: 200vh; /* 测试用，实际用您自己的内容 */
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">CrossTrading</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="搜索商品...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">首页 </a></li>
+                    <li><a href="products.html">商品</a></li>
+                    <li><a href="categories.html">分类</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                    <li><a href="login.html">登录</a></li>
+                    <li><a href="cart.html">购物车商品列表</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <a href="login.html"><i class="fas fa-user"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主要内容区域 -->
+    <main class="main-content">
+        <!-- 轮播图 -->
+        <section class="hero-slider">
+            <div class="slider-container">
+                <div class="slide active">
+                    <img src="picture/2.jpg" alt="促销活动">
+                    <div class="slide-content">
+                        <h2>夏季大促销</h2>
+                        <p>全场商品低至5折</p>
+                        <a href="#" class="btn">立即购买</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="picture/3.jpg" alt="新品上市">
+                    <div class="slide-content">
+                        <h2>新品上市</h2>
+                        <p>最新科技产品抢先体验</p>
+                        <a href="#" class="btn">查看详情</a>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 特色分类 -->
+        <section class="featured-categories">
+            <div class="container">
+                <h2 class="section-title">热门分类</h2>
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <img src="picture/4.jpg" alt="电子产品">
+                        <h3>电子产品</h3>
+                    </div>
+                    <div class="category-card">
+                        <img src="picture/1.jpg" alt="运动产品">
+                        <h3>运动产品</h3>
+                    </div>
+                    <div class="category-card">
+                        <img src="picture/6.jpg" alt="服装服饰">
+                        <h3>服装服饰</h3>
+                    </div>
+                    <div class="category-card">
+                        <img src="picture/7.jpg" alt="美妆个护">
+                        <h3>美妆个护</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 推荐商品 -->
+                 <section class="featured-products">
+            <div class="container">
+                <h2 class="section-title">推荐商品</h2>
+                <div class="products-grid">
+
+                    <!-- 商品卡片将通过JavaScript动态加载 -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 特色服务 -->
+        <section class="services">
+            <div class="container">
+                <div class="service-item">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>全球配送</h3>
+                    <p>快速可靠的全球物流服务</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-undo"></i>
+                    <h3>无忧退货</h3>
+                    <p>30天内无理由退货</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-lock"></i>
+                    <h3>安全支付</h3>
+                    <p>多种安全支付方式</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 支持</h3>
+                    <p>全天候客户服务</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-column">
+                <h3>关于我们</h3>
+                <p>CrossTrading 是一家领先的跨境电商平台，致力于为全球消费者提供优质商品和服务。</p>
+            </div>
+            <div class="footer-column">
+                <h3>快速链接</h3>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="products.html">商品</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>客户服务</h3>
+                <ul>
+                    <li><a href="faq.html">常见问题</a></li>
+                    <li><a href="shipping.html">配送信息</a></li>
+                    <li><a href="returns.html">退货政策</a></li>
+                    <li><a href="privacy.html">隐私政策</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>联系我们</h3>
+                <p>邮箱: info@crosstrading.com</p>
+                <p>电话: +1 (123) 456-7890</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 CrossTrading. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+         <script>
+        // 灰色调色板（不同深浅的灰色）
+        const grayPalette = [
+            '#aaaaaa', '#999999', '#888888',
+            '#777777', '#666666', '#555555'
+        ];
+        
+        const particles = [];
+        const particleCount = 15;
+        
+        // 创建粒子
+        for (let i = 0; i < particleCount; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            
+            // 随机选择灰色
+            const gray = grayPalette[Math.floor(Math.random() * grayPalette.length)];
+            particle.style.backgroundColor = gray;
+            
+            document.body.appendChild(particle);
+            particles.push({
+                el: particle,
+                x: 0,
+                y: 0,
+                delay: i * 0.05,
+                size: Math.random() * 8 + 7, // 粒子大小
+                baseGray: gray // 保存基础颜色
+            });
+        }
+        
+        let mouseX = 0;
+        let mouseY = 0;
+        
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
+        
+        function animate() {
+            particles.forEach((particle, i) => {
+                const delay = particle.delay;
+                
+                // 平滑跟随鼠标中心
+                particle.x += (mouseX - particle.x) * (0.1 + delay);
+                particle.y += (mouseY - particle.y) * (0.1 + delay);
+                
+                particle.el.style.left = particle.x + 'px';
+                particle.el.style.top = particle.y + 'px';
+                particle.el.style.width = particle.size + 'px';
+                particle.el.style.height = particle.size + 'px';
+                
+                // 微妙的颜色变化效果（保持灰色调）
+                const shadeVariation = Math.sin(Date.now() * 0.001 + i) * 0.1;
+                particle.el.style.opacity = 0.6 + shadeVariation;
+            });
+            
+            requestAnimationFrame(animate);
+        }
+        
+        animate();
+    </script>
+</body>
+</html>
